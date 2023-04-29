@@ -23,7 +23,7 @@ def index():
 @app.route('/savecred', methods=['GET','POST'])
 def savecred():
     if request.method == 'POST':
-        if  request.form.get('email') != 'foligolu09@gamil.com' and request.form.get('password') != '123':
+        if  request.form.get('email') != '< YOUR EMAIL ADDRESS >' and request.form.get('password') != '123':
             return render_template('home.html')
         else:
             email = request.form.get('email')
